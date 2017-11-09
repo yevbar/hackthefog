@@ -8,20 +8,26 @@ div {
   height: 100%
 }
 
-.in-progress {
-  width: 50%;
-  font-family: Merriweather, sans-serif;
+.title {
+  width: 70%;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 70px;
   border-bottom: 3px solid black;
-  border-top: 3px solid black;
+}
+
+.subtext {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
 }
 
 .logo {
-  width: 250px;
-  height: 250px;
+  height: 60%;
   margin-left: auto;
 	margin-right: auto;
 	display: block;
