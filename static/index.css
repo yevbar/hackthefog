@@ -62,4 +62,6 @@ body {
 }
 .info-tab p {
   font-family: 'Open Sans', sans-serif;
+  padding-left: 15%;
+  padding-right: 15%;
 }
