@@ -44,6 +44,25 @@ body {
   right: 0;
 }
 
+.info-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.info-buttons button {
+  float:none;
+  background-color: #ccd4e2;
+  width: 30%;
+  height: 60px;
+  border: none;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .info-tab {
   position: static;
   display: block;
@@ -59,6 +78,7 @@ body {
   border-bottom: 3px solid black;
   border-top: 3px solid black;
   padding: 10px;
+  margin-bottom: 50px;
 }
 .info-tab p {
   font-family: 'Open Sans', sans-serif;
