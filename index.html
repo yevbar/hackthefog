@@ -4,7 +4,8 @@
 		<title>Hack the Fog</title>
 		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto|Roboto+Condensed|Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="static/index.css">
-		<meta name="viewport" content="width=700">
+		<meta name="viewport" content="width=800">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	</head>
 	<body>
 		<div class="front">
@@ -17,9 +18,9 @@
 		</div>
 
 		<div class="info-buttons">
-			<button onclick="myIndex = 0; clearInterval(); carousel()">Info</button>
-			<button onclick="myIndex = 1; clearInterval(); carousel()">FAQ</button>
-			<button onclick="myIndex = 2; clearInterval(); carousel()">Sponsors</button>
+			<button onclick="carousel('#info')">Info</button>
+			<button onclick="carousel('#faq')">FAQ</button>
+			<button onclick="carousel('#sponsors')">Sponsors</button>
 		</div>
 
 		<div id="info" class="info-tab">
@@ -60,18 +61,10 @@
 		</div>
 
 		<script>
-			var myIndex = 0;
-			//var interval = setInterval(carousel, 4000);
-
-			function carousel() {
-			    var i;
-			    var x = document.getElementsByClassName("info-tab");
-			    for (i = 0; i < x.length; i++) {
-			       x[i].style.display = "none";
-			    }
-			    myIndex++;
-			    if (myIndex > x.length) {myIndex = 1}
-			    x[myIndex-1].style.display = "block";
+			function carousel(index) {
+				$('html, body').animate({
+        scrollTop: $(index).offset().top
+			}, 800);
 			}
 		</script>
 	</body>
