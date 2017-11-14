@@ -17,9 +17,9 @@
 		</div>
 
 		<div class="info-buttons">
-			<button onclick="myIndex = 0; clearTimeout(); carousel()">Info</button>
-			<button onclick="myIndex = 1; clearTimeout(); carousel()">FAQ</button>
-			<button onclick="myIndex = 2; clearTimeout(); carousel()">Sponsors</button>
+			<button onclick="myIndex = 0; clearInterval(); carousel()">Info</button>
+			<button onclick="myIndex = 1; clearInterval(); carousel()">FAQ</button>
+			<button onclick="myIndex = 2; clearInterval(); carousel()">Sponsors</button>
 		</div>
 
 		<div id="info" class="info-tab">
@@ -61,7 +61,7 @@
 
 		<script>
 			var myIndex = 0;
-			carousel();
+			//var interval = setInterval(carousel, 4000);
 
 			function carousel() {
 			    var i;
@@ -72,7 +72,6 @@
 			    myIndex++;
 			    if (myIndex > x.length) {myIndex = 1}
 			    x[myIndex-1].style.display = "block";
-			    setTimeout(carousel, 4000);
 			}
 		</script>
 	</body>
