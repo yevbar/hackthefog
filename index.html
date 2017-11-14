@@ -10,7 +10,9 @@
 		<div class="front">
 		<h1 class="title">
 		HACK THE FOG</h1>
-			<img src="static/htf-logo.png" alt="Hack the Fog Logo" class="logo">
+		<div class="logo">
+			<img src="static/htf-logo.png" alt="Hack the Fog Logo">
+		</div>
 		<h2 class="subtext">A spring hackathon for Bay Area teens.</h2>
 		</div>
 		<!-- TODO make some buttons to animate sections -->
@@ -25,7 +27,20 @@
 		</div>
 		<script>
 			//TODO animate divs
+			var myIndex = 0;
+			carousel();
 
+			function carousel() {
+			    var i;
+			    var x = document.getElementsByClassName("info-tab");
+			    for (i = 0; i < x.length; i++) {
+			       x[i].style.display = "none";
+			    }
+			    myIndex++;
+			    if (myIndex > x.length) {myIndex = 1}
+			    x[myIndex-1].style.display = "block";
+			    setTimeout(carousel, 4000);
+			}
 		</script>
 	</body>
 </html>

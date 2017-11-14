@@ -27,10 +27,20 @@ body {
 }
 
 .logo {
-  height: 60%;
+  height: 440px;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo img{
+  position: absolute;
   margin-left: auto;
 	margin-right: auto;
+  padding-bottom: 20px;
 	display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .info-tab {
