@@ -65,7 +65,7 @@ body {
 
 .info-tab {
   position: static;
-  display: block;
+  display: none;
   width: 100%;
   text-align: center;
   margin-top: 30px;
