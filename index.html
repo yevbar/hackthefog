@@ -3,6 +3,8 @@
 	<head>
 		<title>Hack the Fog</title>
 		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto|Roboto+Condensed|Open+Sans" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="static/index.js"></script>
 		<link rel="stylesheet" href="static/index.css">
 		<meta name="viewport" content="width=700">
 		<!--Dont' know whats nessacary in the code underneath this-->
@@ -23,9 +25,9 @@
 		</div>
 
 		<div class="info-buttons">
-			<button onclick="myIndex = 0; clearTimeout(); carousel()">Info</button>
-			<button onclick="myIndex = 1; clearTimeout(); carousel()">FAQ</button>
-			<button onclick="myIndex = 2; clearTimeout(); carousel()">Sponsors</button>
+			<button onclick="carousel('#info')">Info</button>
+			<button onclick="carousel('#faq')">FAQ</button>
+			<button onclick="carousel('#sponsors')">Sponsors</button>
 		</div>
 
 		<div id="info" class="info-tab">
