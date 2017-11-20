@@ -91,3 +91,9 @@ body {
   padding-left: 15%;
   padding-right: 15%;
 }
+.bottom-banner {
+  background-image: url("http://film.ucsc.edu/sites/default/files/socdoc/socdoc-home-dark-grey-rectangle.png");
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 15%;
+  padding-right: 15%;
+}
