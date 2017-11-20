@@ -102,8 +102,10 @@ body {
 .nav > li {
   display: inline-block;
   padding: 0 25px 0 25px;
+  marg
 }
 .nav > li > a {
+  font-size: 30px;
   text-decoration: none;
   color: #ffffff;
 }
