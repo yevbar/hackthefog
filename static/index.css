@@ -5,7 +5,8 @@ body {
 .front {
   position: static;
   width: 100%;
-  height: 100%
+  height: 100%;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -22,9 +23,15 @@ body {
 }
 
 .front h2 {
+  margin-top: 0px;
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
-  margin-bottom: 85px;
+}
+
+.front h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  text-align: center;
 }
 
 .logo {
@@ -65,7 +72,6 @@ body {
 
 .info-tab {
   position: static;
-  display: none;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -84,4 +90,25 @@ body {
   font-family: 'Open Sans', sans-serif;
   padding-left: 15%;
   padding-right: 15%;
+}
+.nav {
+  margin-top: 50px;
+  background-color: #595959;
+  color: #ffffff;
+  list-style: none;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.nav > li {
+  display: inline-block;
+  padding: 0 25px 0 25px;
+  marg
+}
+.nav > li > a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav > li > a:hover {
+  color: #c1c1c1;
 }
