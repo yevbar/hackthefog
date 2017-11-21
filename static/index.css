@@ -91,6 +91,11 @@ body {
   padding-left: 15%;
   padding-right: 15%;
 }
+.info-tab > a > img {
+  margin: 0 auto;
+  width:130px;
+  height:130px;
+}
 .nav {
   margin-top: 50px;
   background-color: #595959;
