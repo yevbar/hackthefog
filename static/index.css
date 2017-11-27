@@ -1,8 +1,9 @@
 :root{
-  --bgcolor: white;
+  --bgcolor: #e3ebf7;
   --color1: #5e5e5e;
-  --color2: black;
+  --color2: #343836;
   --color3: #ccd4e2;
+  --color4: #8e92af;
 }
 
 body {
@@ -91,8 +92,8 @@ body {
   font-size: 60px;
   width: 40%;
   margin: auto;
-  border-bottom: 3px solid var(--color2);
-  border-top: 3px solid var(--color2);
+  border-bottom: 3px solid var(--color4);
+  border-top: 3px solid var(--color4);
   padding: 10px;
   margin-bottom: 50px;
 }
@@ -131,7 +132,7 @@ body {
 }
 .nav {
   margin-top: 50px;
-  background-color: #595959;
+  background-color: var(--color1);
   color: #ffffff;
   list-style: none;
   text-align: center;
@@ -148,5 +149,5 @@ body {
   color: #ffffff;
 }
 .nav > li > a:hover {
-  color: #c1c1c1;
+  color: var(--bgcolor);
 }
