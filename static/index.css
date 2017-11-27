@@ -126,7 +126,7 @@ body {
   color: var(--color1);
 }
 #faq .a {
-  display: none;
+  visibility: hidden;
   text-align: left;
 }
 .nav {
