@@ -1,5 +1,14 @@
+:root{
+  --bgcolor: white;
+  --color1: #5e5e5e;
+  --color2: black;
+  --color3: #ccd4e2;
+}
+
 body {
- margin: 0;
+  margin: 0;
+  background-color: var(--bgcolor);
+  color: var(--color2);
 }
 
 .front {
@@ -19,7 +28,7 @@ body {
   font-weight: bold;
   font-style: italic;
   font-size: 70px;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--color2);
 }
 
 .front h2 {
@@ -57,8 +66,9 @@ body {
   margin-bottom: 20px;
 }
 .info-buttons button {
+  color:inherit;
   float:none;
-  background-color: #ccd4e2;
+  background-color: var(--color3);
   width: 30%;
   height: 60px;
   border: none;
@@ -81,8 +91,8 @@ body {
   font-size: 60px;
   width: 40%;
   margin: auto;
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
+  border-bottom: 3px solid var(--color2);
+  border-top: 3px solid var(--color2);
   padding: 10px;
   margin-bottom: 50px;
 }
@@ -109,6 +119,11 @@ body {
 #faq .q {
   text-align: center;
   width: 50%;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+#faq .q:hover {
+  color: var(--color1);
 }
 #faq .a {
   display: none;
