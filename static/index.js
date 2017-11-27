@@ -12,15 +12,17 @@ $(function() {
       //Animate it to bounce in if it isn't visible
       a.css({
         visibility: "visible"
-      }).toggleClass("animated bounceInRight");
-      //If it has bounceOut class, remove it
-      if (a.hasClass('flipOutX')) a.toggleClass('flipOutX');
-    } else {
-      a.toggleClass("bounceInRight flipOutX");
-      $('#yourElement')
+      }).addClass("animated flipInX")
         .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
-      , function(){
-        a.css({visibility: "hidden"});
+        , function(){
+            a.removeClass('animated flipInX');
+      });
+    } else {
+      a.addClass("animated flipOutX")
+        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+        , function(){
+          a.css({visibility: "hidden"})
+            .removeClass('animated flipOutX');
       });
     }
   });
