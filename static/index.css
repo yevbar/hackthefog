@@ -121,7 +121,8 @@ body {
   text-align: center;
   width: 50%;
   font-size: 1.2em;
-  text-decoration: underline;
+  background-color: #ccd4e2;
+  border-radius: 15px;
 }
 #faq .q:hover {
   color: var(--color1);
@@ -129,6 +130,8 @@ body {
 #faq .a {
   visibility: hidden;
   text-align: left;
+  background-color: #ccd4e2;
+  border-radius: 15px;
 }
 .nav {
   margin-top: 50px;
