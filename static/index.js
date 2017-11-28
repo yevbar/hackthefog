@@ -26,4 +26,15 @@ $(function() {
       });
     }
   });
+
+  //Animate questions on hover
+  $('.q').hover(function(e){
+    //Add animate.css class
+    $(e.target).addClass("animated bounce");
+    //Remove on animation end
+    $(e.target).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+    , function(){
+      $(e.target).removeClass("animated bounce");
+    });
+  }, function(e){})
 });
