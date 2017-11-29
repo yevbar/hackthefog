@@ -114,10 +114,9 @@ body {
   width: 50%;
   margin: auto;
 }
-#faq p {
+#faq .questions p {
   display: inline-block;
   margin: auto;
-  width: 48%;
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 20px;
@@ -125,7 +124,7 @@ body {
 }
 #faq .q {
   text-align: center;
-  width: 40%;
+  width: 52%;
   font-size: 1.2em;
   color: var(--color6);
   background-color: #ccd4e2;
@@ -134,8 +133,9 @@ body {
 #faq .q:hover {
   color: var(--color7);
 }
-#faq .a {
-  visibility: hidden;
+#faq .questions .a {
+  width: 0px;
+  display: none;
   text-align: left;
   background-color: #ccd4e2;
   border-radius: 15px;
