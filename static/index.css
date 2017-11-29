@@ -4,11 +4,10 @@
   --color2: #343836;
   --color3: #ccd4e2;
   --color4: #8e92af;
-  --color5: #008e75;
+  --color5: #637999;
   --color6: #2e22a2;
   --color7: #7975a4;
-  --color8: #00b8ed;
-  --color9: #99cfff;
+  --color8: #00a2d1;
 }
 
 body {
@@ -95,7 +94,7 @@ body {
   margin-top: 30px;
 }
 .info-tab h1 {
-  color: var(--color9);
+  color: var(--color5);
   font-family: 'Roboto', sans-serif;
   font-size: 60px;
   width: 40%;
