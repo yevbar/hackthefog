@@ -17,7 +17,7 @@ $(function() {
         },
         {
           complete: function(){
-            a.css("font-size", "1em");
+            a.animate({"font-size": "1em"});
           },
           start: function(){
             a.css("display", "inline-block")
@@ -32,7 +32,7 @@ $(function() {
         },
         {
           start: function(){
-            a.css("font-size", "0px");
+            a.animate({"font-size": "0px"});
           },
           complete: function(){
             a.css("display", "none");
