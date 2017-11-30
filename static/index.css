@@ -124,7 +124,7 @@ body {
 }
 #faq .q {
   text-align: center;
-  width: 52%;
+  width: 55%;
   font-size: 1.2em;
   color: var(--color6);
   background-color: #ccd4e2;
@@ -134,11 +134,13 @@ body {
   color: var(--color7);
 }
 #faq .questions .a {
-  width: 0px;
   display: none;
+  width: 0px;
+  height: 0px;
   text-align: left;
   background-color: #ccd4e2;
   border-radius: 15px;
+  font-size: 0em;
 }
 .nav {
   margin-top: 50px;
