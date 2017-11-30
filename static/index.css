@@ -4,9 +4,10 @@
   --color2: #343836;
   --color3: #ccd4e2;
   --color4: #8e92af;
-  --color5: #008e75;
+  --color5: #637999;
   --color6: #2e22a2;
   --color7: #7975a4;
+  --color8: #00a2d1;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
   padding-top: 20px;
   font-weight: bold;
   font-style: italic;
-  font-size: 70px;
+  font-size: 90px;
   border-bottom: 3px solid var(--color2);
 }
 
@@ -54,11 +55,11 @@ body {
 }
 
 .logo img{
-  height: 500px;
+  height: 400px;
   position: absolute;
   margin-left: auto;
-	margin-right: auto;
-	display: block;
+  margin-right: auto;
+  display: block;
   bottom: 0;
   left: 0;
   right: 0;
@@ -93,6 +94,7 @@ body {
   margin-top: 30px;
 }
 .info-tab h1 {
+  color: var(--color5);
   font-family: 'Roboto', sans-serif;
   font-size: 60px;
   width: 40%;
@@ -137,6 +139,7 @@ body {
   display: none;
   width: 0px;
   height: 0px;
+  color: var(--color8);
   text-align: left;
   background-color: #ccd4e2;
   border-radius: 15px;
