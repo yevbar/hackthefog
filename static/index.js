@@ -7,6 +7,8 @@ $(function() {
 
   //Animate showing answers on click
   $('.q').click(function(e) {
+    $(e.target).toggleClass("animated bounce");
+
     var a = $(e.target).next('.a');
 
     if(a.css("width") == "0px"){
