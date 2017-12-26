@@ -113,7 +113,7 @@ body {
   height:130px;
 }
 #faq .questions {
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 #faq .questions p {
@@ -126,7 +126,7 @@ body {
 }
 #faq .q {
   text-align: center;
-  width: 55%;
+  width: 51%;
   font-size: 1.2em;
   color: var(--color6);
   background-color: #ccd4e2;
