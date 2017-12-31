@@ -14,7 +14,7 @@ $(function() {
     if(a.css("width") == "0px"){
       a.animate(
         {
-          width:"38%",
+          width:"43%",
           height:"100%"
         },
         {
