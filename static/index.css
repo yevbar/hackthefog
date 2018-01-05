@@ -4,6 +4,10 @@
   --color2: #343836;
   --color3: #ccd4e2;
   --color4: #8e92af;
+  --color5: #637999;
+  --color6: #544f84;
+  --color7: #7975a4;
+  --color8: #5395a9;
 }
 
 body {
@@ -28,7 +32,7 @@ body {
   padding-top: 20px;
   font-weight: bold;
   font-style: italic;
-  font-size: 70px;
+  font-size: 90px;
   border-bottom: 3px solid var(--color2);
 }
 
@@ -45,17 +49,17 @@ body {
 }
 
 .logo {
-  height: 480px;
+  height: 415px;
   overflow: hidden;
   position: relative;
 }
 
 .logo img{
-  height: 500px;
+  height: 400px;
   position: absolute;
   margin-left: auto;
-	margin-right: auto;
-	display: block;
+  margin-right: auto;
+  display: block;
   bottom: 0;
   left: 0;
   right: 0;
@@ -70,6 +74,7 @@ body {
   color:inherit;
   float:none;
   background-color: var(--color3);
+  color: var(--color5);
   width: 30%;
   height: 60px;
   border: none;
@@ -79,6 +84,7 @@ body {
   font-family: Roboto;
   font-size: 30px;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 .info-tab {
@@ -88,6 +94,7 @@ body {
   margin-top: 30px;
 }
 .info-tab h1 {
+  color: var(--color5);
   font-family: 'Roboto', sans-serif;
   font-size: 60px;
   width: 40%;
@@ -106,32 +113,37 @@ body {
   height:130px;
 }
 #faq .questions {
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
-#faq p {
+#faq .questions p {
   display: inline-block;
   margin: auto;
-  width: 40%;
   padding-left: 2%;
   padding-right: 2%;
   margin-bottom: 20px;
+  padding: 5px 5px 5px 5px;
 }
 #faq .q {
   text-align: center;
-  width: 50%;
+  width: 51%;
   font-size: 1.2em;
+  color: var(--color6);
   background-color: #ccd4e2;
   border-radius: 15px;
 }
 #faq .q:hover {
-  color: var(--color1);
+  color: var(--color7);
 }
-#faq .a {
-  visibility: hidden;
+#faq .questions .a {
+  display: none;
+  width: 0px;
+  height: 0px;
+  color: var(--color8);
   text-align: left;
   background-color: #ccd4e2;
   border-radius: 15px;
+  font-size: 0em;
 }
 .nav {
   margin-top: 50px;
@@ -144,7 +156,6 @@ body {
 .nav > li {
   display: inline-block;
   padding: 0 25px 0 25px;
-  marg
 }
 .nav > li > a {
   font-size: 30px;
