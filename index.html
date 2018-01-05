@@ -19,18 +19,19 @@
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src="static/index.js"></script>
+	<link rel="stylesheet" href="static/fog.css">
+	<script src="static/fog.js"></script>
 </head>
 
 <body>
 	<div class="front">
-		<h1 class="title">
-			HACK THE FOG</h1>
+		<!--<h1 class="title">HACK THE FOG</h1>-->
 		<div class="logo">
 			<img src="static/htf-logo.png" alt="Hack the Fog Logo">
 		</div>
 		<h2>San Francisco's first and best high school hackathon</h2>
 	</div>
-
+	<canvas id="myCanvas" height="200" width="800"></canvas>
 	<div class="info-buttons">
 		<button onclick="carousel('#info')">Info</button>
 		<button onclick="carousel('#faq')">FAQ</button>
