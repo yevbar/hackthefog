@@ -66,6 +66,7 @@ body {
 }
 
 .button {
+  font-family: 'Open Sans', sans-serif;
   display:block;
   width: 180px;
   height: 60px;
@@ -184,6 +185,18 @@ body {
   background-color: #ccd4e2;
   border-radius: 15px;
   font-size: 0em;
+}
+
+.partner-bottom > a {
+  color: var(--color5);
+  text-decoration: none;
+  text-align: center;
+}
+
+.partner-bottom > a > p{
+  color: var(--color5);
+  text-decoration: none;
+  text-align: center;
 }
 
 .nav {
