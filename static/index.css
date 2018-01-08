@@ -37,7 +37,7 @@ body {
 }
 
 .front h2 {
-  margin-top: 0px;
+  margin-top: 20px;
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 .logo img{
-  height: 400px;
+  width: 100%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
