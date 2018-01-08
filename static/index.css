@@ -69,6 +69,10 @@ body {
   margin: 70px auto;
   border-radius: 5px;
   background-color: #06c;
+  transition: width 0.5s;
+}
+.button:hover{
+  width: 250px;
 }
 
 .button .content {
@@ -192,6 +196,10 @@ body {
   margin: 70px auto;
   border-radius: 5px;
   background-color: #06c;
+  transition: width 0.5s;
+}
+.button2:hover{
+  width: 350px;
 }
 
 .button2 .content {
