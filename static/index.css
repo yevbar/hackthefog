@@ -42,20 +42,19 @@ body {
   text-align: center;
 }
 
-.logo {
-  height: 300px;
-  width: 200px;
+img {
+  height: 400px;
+  width: 630px;
   text-align: center;
   overflow: hidden;
   position: relative;
-}
-
-.logo img{
-  width: 100%;
   display: block;
-  position: absolute;
-  margin: 0 auto;
+  position: relative;
   display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 275px;
 }
 
 .button {
