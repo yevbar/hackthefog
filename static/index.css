@@ -43,8 +43,7 @@ body {
 }
 
 img {
-  height: 400px;
-  width: 630px;
+  width: 90%;
   text-align: center;
   overflow: hidden;
   position: relative;
@@ -53,8 +52,8 @@ img {
   display: block;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-right: 0px;
-  margin-left: 275px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .button {
