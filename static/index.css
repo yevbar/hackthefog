@@ -37,7 +37,7 @@ body {
 }
 
 .front h2 {
-  margin-top: 0px;
+  margin-top: 20px;
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 .logo img{
-  height: 400px;
+  width: 100%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -69,6 +69,11 @@ body {
   margin: 70px auto;
   border-radius: 5px;
   background-color: #06c;
+  transition: width 0.5s;
+}
+.button:hover {
+  width: 230px;
+  height: 70px;
 }
 
 .button .content {
@@ -192,6 +197,12 @@ body {
   margin: 70px auto;
   border-radius: 5px;
   background-color: #06c;
+  transition: width 0.5s;
+}
+
+.button2:hover {
+  width: 230px;
+  height: 70px;
 }
 
 .button2 .content {
@@ -217,7 +228,7 @@ body {
 .nav {
   margin-top: 50px;
   background-color: var(--color1);
-  color: #ffffff;
+  color: #fff;
   list-style: none;
   text-align: center;
   padding: 20px 0 20px 0;
@@ -229,11 +240,11 @@ body {
 }
 
 .nav > li > a {
-  font-size: 30px;
+  font-size: 35px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .nav > li > a:hover {
-  color: var(--bgcolor);
+  color: #666;
 }
