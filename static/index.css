@@ -44,15 +44,15 @@ body {
 }
 
 img {
-  width: 60%;
+  width: 70%;
   text-align: center;
   overflow: hidden;
   position: relative;
   display: block;
   position: relative;
   display: block;
-  margin-top: 15vmax;
-  margin-bottom: 100px;
+  margin-top: 18vmax;
+  margin-bottom: 10vmax;
   margin-right: auto;
   margin-left: auto;
 }
@@ -109,8 +109,8 @@ img {
 .info-tab h1 {
   color: var(--color5);
   font-family: 'Roboto', sans-serif;
-  font-size: 60px;
-  width: 40%;
+  font-size: 14vmin;
+  width: 60%;
   margin: auto;
   border-bottom: 3px solid var(--color4);
   border-top: 3px solid var(--color4);
