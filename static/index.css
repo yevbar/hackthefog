@@ -44,17 +44,17 @@ body {
 }
 
 img {
-  width: 90%;
+  width: 60%;
   text-align: center;
   overflow: hidden;
   position: relative;
   display: block;
   position: relative;
   display: block;
-  margin-top: 100px;
+  margin-top: 15vmax;
   margin-bottom: 100px;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button {
@@ -97,29 +97,6 @@ img {
 .button:active .content {
   bottom: 0;
   box-shadow: 0 6 0 #06c;
-}
-
-.info-buttons {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.info-buttons button {
-  color:inherit;
-  float:none;
-  background-color: var(--color3);
-  color: var(--color5);
-  width: 30%;
-  height: 60px;
-  border: none;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: Roboto;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 20px;
 }
 
 .info-tab {
@@ -234,25 +211,46 @@ img {
 }
 
 .nav {
-  margin-top: 50px;
+  display: flex;
   background-color: var(--color1);
-  color: #fff;
+  color: #ffffff;
   list-style: none;
   text-align: center;
   padding: 20px 0 20px 0;
+  justify-content: space-evenly;
 }
 
-.nav > li {
-  display: inline-block;
-  padding: 0 25px 0 25px;
-}
-
-.nav > li > a {
-  font-size: 35px;
+.nav > a {
+  font-size: 5vw;
   text-decoration: none;
   color: #fff;
 }
 
-.nav > li > a:hover {
+.nav > a:hover {
   color: #666;
+}
+
+.nav > button {
+  float:none;
+  background-color: var(--color3);
+  color: var(--color5);
+  border: none;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 3vw;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.nav > button span {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+#navfooter {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }

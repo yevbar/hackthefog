@@ -5,7 +5,7 @@
 	<title>Hack the Fog</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=700">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Information about San Francisco's first and best high school
 			hackathon!">
 	<!--Google search engine stuff-->
@@ -26,6 +26,16 @@
 </head>
 
 <body>
+	<div id="navfooter">
+		<div class="nav">
+			<button onclick="carousel('#info')"><span>Info</span></button>
+			<button onclick="carousel('#faq')"><span>FAQ</span></button>
+			<button onclick="carousel('#partners')"><span>Partners</span></button>
+			<a href="https://www.facebook.com/hackthefog/" target="_blank" class="ion-social-facebook"></a>
+			<a href="https://github.com/yevgeniybarkalov/hackthefog" target="_blank" class="ion-social-github"></a>
+			<a href="mailto:hackthefog@gmail.com" target="_blank" class="ion-ios-email"></a>
+		</div>
+	</div>
 	<div class="front">
 		<!--<h1 class="title">HACK THE FOG</h1
 		<div class="logo">-->
@@ -35,11 +45,6 @@
 		<a href="" class="button">
 			<span class="content">Apply Now!</span></a>
 	</div>
-	<div class="info-buttons">
-		<button onclick="carousel('#info')">Info</button>
-		<button onclick="carousel('#faq')">FAQ</button>
-		<button onclick="carousel('#partners')">Partners</button>
-	</div>
 
 	<div id="info" class="info-tab">
 		<h1>Info</h1>
@@ -47,7 +52,7 @@
 		<base target="_blank">
 		<iframe id="Example2"
     		title="Example2"
-    		width="400"
+    		max-width="500"
     		height="300"
 		    frameborder="0"
 		    scrolling="no"
@@ -80,11 +85,6 @@
 		<a href="Venue_Doc.pdf" class="button2">
 			<span class="content">Interested in Being Partners?</span></a>
 	</div>
-	<ul class="nav">
-		<li><a href="https://www.facebook.com/hackthefog/" target="_blank" class="ion-social-facebook"></a></li>
-		<li><a href="https://github.com/yevgeniybarkalov/hackthefog" target="_blank" class="ion-social-github"></a></li>
-		<li><a href="mailto:hackthefog@gmail.com" target="_blank" class="ion-ios-email"></a></li>
-	</ul>
 </body>
 
 </html>
