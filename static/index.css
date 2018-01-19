@@ -115,7 +115,7 @@ img {
   border-bottom: 3px solid var(--color4);
   border-top: 3px solid var(--color4);
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 8vmin;
 }
 
 .info-tab p {
@@ -126,6 +126,12 @@ img {
   margin: 0 auto;
   width:130px;
   height:130px;
+}
+
+#info iframe {
+  width: 60vmin;
+  height: 50vmin;
+  margin-top: 5vmin;
 }
 
 #faq .questions {
