@@ -221,7 +221,7 @@ img {
 }
 
 .nav > a {
-  font-size: 5vw;
+  font-size: 5vmax;
   text-decoration: none;
   color: #fff;
 }
