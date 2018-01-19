@@ -5,7 +5,7 @@
   --color2: #343836;
   --color3: #ccd4e2;
   --color4: #8e92af;
-  --color5: #637999;
+  --color5: #5c6e88;
   --color6: #544f84;
   --color7: #7975a4;
   --color8: #5395a9;
@@ -222,14 +222,16 @@ img {
   color: #ffffff;
   list-style: none;
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 2vmin 0 2vmin 0;
   justify-content: space-evenly;
+  height: 4vmax;
 }
 
 .nav > a {
-  font-size: 5vmax;
+  font-size: 3vmax;
   text-decoration: none;
   color: #fff;
+  line-height: 4vmax;
 }
 
 .nav > a:hover {
@@ -238,14 +240,14 @@ img {
 
 .nav > button {
   float:none;
-  background-color: var(--color3);
-  color: var(--color5);
+  background: linear-gradient(var(--color3), var(--color4));
+  color: #566263;
   border: none;
   text-align: center;
   font-family: Roboto;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 2vmin;
 }
 
 .nav > button span {
