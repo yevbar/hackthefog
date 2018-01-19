@@ -1,5 +1,6 @@
 :root{
   --bgcolor: #e3ebf7;
+  --bgcolor2: #8595ad;
   --color1: #5e5e5e;
   --color2: #343836;
   --color3: #ccd4e2;
@@ -12,7 +13,7 @@
 
 body {
   margin: 0;
-  background-color: var(--bgcolor);
+  background: linear-gradient(var(--bgcolor), var(--bgcolor2));
   color: var(--color2);
 }
 
@@ -37,7 +38,7 @@ body {
 }
 
 .front h2 {
-  margin-top: 20px;
+  margin-top: 30px;
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
 }
@@ -66,11 +67,15 @@ img {
   margin: 70px auto;
   border-radius: 5px;
   background-color: #06c;
-  transition: width 0.5s;
+  transition: all 0.5s;
 }
 .button:hover {
   width: 230px;
   height: 70px;
+}
+
+.button:hover .content {
+  line-height: 70px;
 }
 
 .button .content {
@@ -186,7 +191,7 @@ img {
 
 .button2 {
   font-family: 'Open Sans', sans-serif;
-  display:block;
+  display: flex;
   width: 300px;
   height: 60px;
   position: relative;
@@ -194,7 +199,7 @@ img {
   margin: 70px auto;
   border-radius: 5px;
   background-color: #06c;
-  transition: width 0.5s;
+  transition: all 0.5s;
 }
 
 .button2:hover {
@@ -215,11 +220,17 @@ img {
   box-shadow: 0 6px 0 #06c;
   border-radius: 5px;
   transition: all 0.2s linear;
+  transition: line-height 0.5s;
+  margin: auto;
 }
 
 .button2:active .content {
   bottom: 0;
   box-shadow: 0 6 0 #06c;
+}
+
+.button2:hover .content {
+  line-height: 70px;
 }
 
 .nav {
