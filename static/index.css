@@ -5,7 +5,7 @@
   --color2: #343836;
   --color3: #ccd4e2;
   --color4: #8e92af;
-  --color5: #5c6e88;
+  --color5: #5b687b;
   --color6: #544f84;
   --color7: #7975a4;
   --color8: #5395a9;
@@ -63,10 +63,10 @@ img {
   width: 180px;
   height: 60px;
   position: relative;
-  border: 2px solid #04a;
+  border: 2px solid var(--color5);
   margin: 70px auto;
   border-radius: 5px;
-  background-color: #06c;
+  background-color: var(--color5);
   transition: all 0.5s;
 }
 .button:hover {
@@ -85,11 +85,11 @@ img {
   width: 100%;
   height: 100%;
   line-height: 60px;
-  background-color: #0df;
+  background: linear-gradient(var(--color3), var(--color4));
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  box-shadow: 0 6px 0 #06c;
+  box-shadow: 0 6px 0 var(--color5);
   border-radius: 5px;
   transition: all 0.2s linear;
 }
@@ -178,10 +178,10 @@ img {
   width: 300px;
   height: 60px;
   position: relative;
-  border: 2px solid #04a;
+  border: 2px solid var(--color5);
   margin: 70px auto;
   border-radius: 5px;
-  background-color: #06c;
+  background-color: var(--color5);
   transition: all 0.5s;
 }
 
@@ -197,10 +197,10 @@ img {
   width: 100%;
   height: 100%;
   line-height: 60px;
-  background-color: #0df;
+  background: linear-gradient(var(--color3), var(--color4));
   text-align: center;
   color: #fff;
-  box-shadow: 0 6px 0 #06c;
+  box-shadow: 0 6px 0 var(--color5);
   border-radius: 5px;
   transition: all 0.2s linear;
   transition: line-height 0.5s;
