@@ -21,7 +21,6 @@ body {
   position: static;
   width: 100%;
   height: 100%;
-  margin-bottom: 30px;
 }
 
 .title {
@@ -100,10 +99,10 @@ img {
 }
 
 .info-tab {
+  padding-top: 60px;
   position: static;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
 .info-tab h1 {
