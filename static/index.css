@@ -88,7 +88,7 @@ img {
   margin-bottom: 8vmin;
 }
 
-.info-tab p {
+p {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -151,6 +151,11 @@ img {
   padding: 2vmin 0 2vmin 0;
   justify-content: space-evenly;
   height: 4vmax;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav > a {
@@ -183,10 +188,13 @@ img {
   text-decoration: none;
 }
 
-#navfooter {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+footer {
+  background-color: var(--color1);
+  text-align: center;
+  margin-bottom: 0;
+  position: static;
+  bottom: 0;
+  height: 150px;
+  color: var(--bgcolor);
+  line-height: 150px;
 }
