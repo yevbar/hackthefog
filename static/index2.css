@@ -12,189 +12,65 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   background: linear-gradient(var(--bgcolor), var(--bgcolor2));
   color: var(--color2);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: 3fr 2fr;
+  grid-template-areas:
+    "logo apply"
+    "logo apply";
 }
 
-.front {
-  position: static;
-  width: 100%;
-  height: 100%;
+.logo {
+  grid-area: logo;
+  align-self: center;
 }
 
-.title {
-  width: 70%;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
-  margin: auto;
-  padding-bottom: 10px;
-  padding-top: 20px;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 90px;
-  border-bottom: 3px solid var(--color2);
-}
-
-.front h2 {
+h2 {
   margin-top: 30px;
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
 }
 
 img {
-  width: 70%;
+  width: 65%;
   text-align: center;
-  overflow: hidden;
-  position: relative;
   display: block;
-  position: relative;
-  display: block;
-  margin-top: 18vmax;
-  margin-bottom: 10vmax;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.front .button {
-  display: block;
-  margin: 70px auto;
-  width: 240px;
-  max-width: 50vw;
-  height: 100px;
-  font-size: 36px;
-}
-.front a {
-  text-decoration: none;
-}
-
-.info-tab {
-  padding-top: 60px;
-  position: static;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.info-tab h1 {
-  color: var(--color5);
-  font-family: 'Roboto', sans-serif;
-  font-size: 14vmin;
-  width: 60%;
-  margin: auto;
-  border-bottom: 3px solid var(--color4);
-  border-top: 3px solid var(--color4);
-  padding: 10px;
-  margin-bottom: 8vmin;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.info-tab > a > img {
-  margin: 0 auto;
-  width:130px;
-  height:130px;
-}
-
-#info iframe {
-  width: 60vmin;
-  height: 50vmin;
-  margin-top: 5vmin;
-}
-
-#faq .questions {
-  width: 60%;
   margin: auto;
 }
 
-#faq .questions p {
-  display: inline-block;
-  margin: auto;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-bottom: 20px;
-  padding: 5px 5px 5px 5px;
-}
-
-#faq .q {
-  text-align: center;
-  width: 51%;
-  font-size: 1.2em;
-  color: var(--color6);
-  background-color: #ccd4e2;
-  border-radius: 15px;
-}
-
-#faq .q:hover {
-  color: var(--color7);
-}
-
-#faq .questions .a {
-  display: none;
-  width: 0px;
-  height: 0px;
-  color: var(--color8);
-  text-align: left;
-  background-color: #ccd4e2;
-  border-radius: 15px;
-  font-size: 0em;
-}
-
-.nav {
-  display: flex;
-  background-color: var(--color1);
-  color: #ffffff;
-  list-style: none;
-  text-align: center;
-  padding: 2vmin 0 2vmin 0;
-  justify-content: space-evenly;
-  height: 4vmax;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.nav > a {
-  font-size: 3vmax;
-  text-decoration: none;
-  color: #fff;
-  line-height: 4vmax;
-}
-
-.nav > a:hover {
-  color: #666;
-}
-
-.button {
-  float:none;
+button {
+  display: block;
+  height: 20vh;
+  width: 20vw;
   background: linear-gradient(var(--color3), var(--color4));
   color: #566263;
   border: none;
   text-align: center;
   font-family: Roboto;
-  font-size: 2.5vw;
+  font-size: 30px;
   font-weight: bold;
   border-radius: 2vmin;
 }
-
-.button span {
-  padding-left: 3vw;
-  padding-right: 3vw;
-  background: none;
+a {
+  display: block;
+  width: 20vw;
   text-decoration: none;
+  grid-area: apply;
+  margin: auto;
+  align-self: center;
 }
 
-footer {
-  background-color: var(--color1);
-  text-align: center;
-  margin-bottom: 0;
-  position: static;
-  bottom: 0;
-  height: 150px;
-  color: var(--bgcolor);
-  line-height: 150px;
+@media screen and (max-width: 120vh) {
+  body {
+    grid-template-areas:
+      "logo logo"
+      "apply apply";
+  }
+  a { width: 50vw; margin-bottom: 15vh; }
+  button { width: 50vw; }
 }
