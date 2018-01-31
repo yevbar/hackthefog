@@ -11,9 +11,9 @@
 	<!--Google search engine stuff-->
 	<meta name="google-site-verification" content="xlgemnZjL7R_DAIuwkoCVrOQ9T3qTR8PaaCQAKeFios" />
 
-	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></link>
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto|Roboto+Condensed|Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="static/index.css">
+	<link rel="stylesheet" href="static/index2.css">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></link>
 	<link rel="icon" href="Images/HTFlogo.png">
 
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -25,64 +25,34 @@
 	-->
 </head>
 
-<body>
-	<div class="nav">
-		<button class="button" onclick="carousel('#info')"><span>Info</span></button>
-		<button class="button" onclick="carousel('#faq')"><span>FAQ</span></button>
-		<button class="button" onclick="carousel('#partners')"><span>Partners</span></button>
-		<a href="https://www.facebook.com/hackthefog/" target="_blank" class="ion-social-facebook"></a>
-		<a href="https://github.com/yevgeniybarkalov/hackthefog" target="_blank" class="ion-social-github"></a>
-		<a href="mailto:hackthefog@gmail.com" target="_blank" class="ion-ios-email"></a>
-	</div>
-	<div class="front">
-		<!--<h1 class="title">HACK THE FOG</h1
-		<div class="logo">-->
-			<img src="Images/HTFlogo.png" alt="Hack the Fog Logo">
-		<!--</div>-->
-		<h2>San Francisco's first and best high school hackathon</h2>
-		<a href="">
-			<button class="button">Apply Now!</button>
-		</a>
-	</div>
-
-	<div id="info" class="info-tab">
-		<h1>Info</h1>
-		<p>San Francisco's first and best high school hackathon! More info to be posted!<p>
-		<base target="_blank">
-		<iframe id="Example2"
-    		title="Example2"
-		    frameborder="0"
-		    scrolling="no"
-    		marginheight="0"
-		    marginwidth="0"
-    		src="http://maps.google.com/maps?q=san+francisco+california&amp;output=embed">
-		</iframe>
-		<br>
-		<small>
-		  <a href="http://maps.google.com/maps?q=san+francisco+california&amp;" style="color:#0000FF;text-align:left"> See bigger map </a>
-		</small>
-	</div>
-	<div id="faq" class="info-tab">
-		<h1>FAQ</h1>
-		<div class="questions">
-			<p class="q" id="test">What are we?</p>
-			<p class="a">San Francisco's first and best hackathon!</p>
-			<p class="q">What is a hackathon?</p>
-			<p class="a">A hackathon is an awesome event where coders and other people interested in technology get to come together and build something in 24 hours</p>
-			<p class="q">Do I need to know how to code to attend a hackathon?</p>
-			<p class="a">Nope! We'll be holding multiple workshops so attendees can start learning how to code and there are also more ways to contribute to a hackathon team than coding!</p>
-			<p class="q">What should I bring?</p>
-			<p class="a">We recommend you bring a laptop, charger, and sleeping bag.</p>
+	<body>
+		<div id="content">
+			<div class="logo">
+				<img src="Images/HTFlogo.png" alt="Hack the Fog Logo">
+				<h2>San Francisco's first and best high school hackathon</h2>
+			</div>
+			<div class="sidebar">
+				<div class="social">
+					<a class="ion-social-facebook" href="https://www.facebook.com/hackthefog/"></a>
+					<a class="ion-ios-email" href="mailto:hackthefog@gmail.com"></a>
+				</div>
+				<a href="https://hackthefog.typeform.com/to/UfrsF5" class="apply">
+					<button id="apply">Apply Now!</button>
+				</a>
+			</div>
 		</div>
-	</div>
-	<div id="partners" class="info-tab">
-		<h1>Partners</h1>
-		<a href="https://hackclub.com/" target="_blank">
-				<img src="Images/hc.jpg" alt="Hack Club Logo"></a>
-	</div>
-	<footer>
-		<p>You've reached the end of this page.</p>
-	</footer>
-</body>
-
+		<div id="sponsors">
+			<div class="sponsorContent">
+				<p>Hosted by Horizons</p>
+				<a href="https://www.joinhorizons.com/">
+					<img alt="Horizons" src="Images/horizons-logo.png">
+				</a>
+				<a href="static/Sponsorship-Prospectus.pdf" class="sponpdf">Interested in sponsoring Hack The Fog?</a>
+			</div>
+			<p class="ion-chevron-up" onclick="hideSponsors()"></p>
+		</div>
+		<button onclick="showSponsors()" id="sponButton" class="animated pulse">
+			Sponsors
+		</button>
+	</body>
 </html>
