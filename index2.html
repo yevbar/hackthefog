@@ -11,9 +11,9 @@
 	<!--Google search engine stuff-->
 	<meta name="google-site-verification" content="xlgemnZjL7R_DAIuwkoCVrOQ9T3qTR8PaaCQAKeFios" />
 
-	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></link>
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Roboto|Roboto+Condensed|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="static/index2.css">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></link>
 	<link rel="icon" href="Images/HTFlogo.png">
 
 	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -27,6 +27,9 @@
 
 	<body>
 		<div id="sponsors">
+			<div class="sponsorContent">
+			</div>
+			<p class="ion-chevron-up" onclick="hideSponsors()"></p>
 		</div>
 		<div id="content">
 			<div class="logo">
@@ -37,6 +40,8 @@
 				<button id="apply">Apply Now!</button>
 			</a>
 		</div>
-		<button id="sponButton" class="animated pulse">Sponsors</button>
+		<button onclick="showSponsors()" id="sponButton" class="animated pulse">
+			Sponsors
+		</button>
 	</body>
 </html>
