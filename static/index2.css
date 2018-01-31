@@ -3,8 +3,8 @@
   --bgcolor2: #8595ad;
   --color1: rgba(94, 94, 94, .85);
   --color2: #343836;
-  --color3: #ccd4e2;
-  --color4: #8e92af;
+  --color3: #b1bdd2;
+  --color4: #888baf;
   --color5: #5b687b;
   --color6: #544f84;
   --color7: #7975a4;
@@ -54,9 +54,9 @@ img {
 #apply {
   display: block;
   height: 20vh;
-  width: 20vw;
+  width: 22vw;
   background: linear-gradient(var(--color3), var(--color4));
-  color: #566263;
+  color: #d9e0ea;
   border: none;
   text-align: center;
   font-family: Roboto;
@@ -66,7 +66,7 @@ img {
 }
 #content a {
   display: block;
-  width: 20vw;
+  width: 22vw;
   text-decoration: none;
   grid-area: apply;
   margin: auto;
@@ -97,7 +97,7 @@ img {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgba(200, 215, 240, 0.8);
+  background-color: rgba(200, 215, 240, 0.85);
   transition: 0.7s;
   overflow-y: hidden;
 }
@@ -131,13 +131,13 @@ img {
 }
 
 .sponsorContent a {
-  font-size: 4vmin;
+  font-size: 4.5vmin;
   border-radius: 2vmin;
   font-style: italic;
   text-decoration: none;
   color: var(--color5);
   font-family: Roboto, sans-serif;
-  width: 40%;
+  width: 88%;
   height: 10vmin;
   line-height: 10vmin;
   margin: auto;
@@ -174,9 +174,9 @@ img {
     max-width: none;
   }
   .sponsorContent a {
-    width: 60%;
+    width: 85%;
     height: 14vh;
-    line-height: 14vh;
+    line-height: 7vh;
     font-size: 6vmin;
   }
 }
