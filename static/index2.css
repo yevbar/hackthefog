@@ -64,7 +64,7 @@ img {
   font-weight: bold;
   border-radius: 2vmin;
 }
-a {
+#content a {
   display: block;
   width: 20vw;
   text-decoration: none;
@@ -97,13 +97,13 @@ a {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(200, 215, 240, 0.8);
   transition: 0.7s;
   overflow-y: hidden;
 }
 
 #sponsors .ion-chevron-up {
-  color: white;
+  color: var(--color5);
   font-size: 5vmax;
   display: block;
   position: absolute;
@@ -115,12 +115,44 @@ a {
 
 .sponsorContent {
   position: relative;
-  top: 10%;
   width: 90%;
-  height: 90%;
+  height: 85%;
   text-align: center;
-  color: white;
+  color: var(--color5);
   margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.sponsorContent img {
+  width: 75%;
+}
+
+.sponsorContent a {
+  font-size: 4vmin;
+  border-radius: 2vmin;
+  font-style: italic;
+  text-decoration: none;
+  color: var(--color5);
+  font-family: Roboto, sans-serif;
+  width: 40%;
+  height: 10vmin;
+  line-height: 10vmin;
+  margin: auto;
+  margin-top: 4vh;
+  background-color: rgba(160, 180, 200, 0.5);
+}
+
+.sponsorContent p {
+  margin: auto;
+  font-weight: bold;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 7vmin;
+  font-style: italic;
+  margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 100vh) {
@@ -129,7 +161,7 @@ a {
       "logo logo"
       "apply apply";
   }
-  a { width: 50vw; margin-top: 1vh; }
+  #content a { width: 50vw; margin-top: 1vh; }
   #apply { width: 50vw; }
   .logo {
     margin-left: 3vw;
@@ -140,5 +172,11 @@ a {
     right: 10vw;
     left: 10vw;
     max-width: none;
+  }
+  .sponsorContent a {
+    width: 60%;
+    height: 14vh;
+    line-height: 14vh;
+    font-size: 6vmin;
   }
 }
