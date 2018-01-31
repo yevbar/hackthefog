@@ -44,8 +44,11 @@ h2 {
   text-align: center;
 }
 
-img {
+.logo img {
   width: 70%;
+}
+
+img {
   text-align: center;
   display: block;
   margin: auto;
@@ -144,13 +147,17 @@ img {
   color: var(--color5);
   margin: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   align-items: center;
 }
 
-.sponsorContent img {
-  width: 75%;
+.sponsorContent .horizons img {
+  width: 70vmin;
+}
+
+.sponsorContent .hackclub img {
+  height: 15vh;
 }
 
 .sponsorContent .sponpdf {
@@ -175,7 +182,7 @@ img {
   font-family: Roboto, sans-serif;
   font-size: 7vmin;
   font-style: italic;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
 }
 
 @media screen and (max-width: 100vh) {
@@ -200,7 +207,7 @@ img {
     max-width: none;
   }
   .sponpdf {
-    width: 85%;
+    width: 90%;
     height: 14vh;
     line-height: 7vh;
     font-size: 6vmin;
