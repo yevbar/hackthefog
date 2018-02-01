@@ -102,9 +102,8 @@ img {
 #sponButton {
   position: relative;
   top: -10vh;
-  left: 50vw;
-  width: 40vw;
-  max-width: 40vmin;
+  left: 55vw;
+  width: 35vw;
   height: 10vh;
   font-family: Roboto;
   font-size: 6vmin;
@@ -120,22 +119,23 @@ img {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
   left: 0;
   bottom: 0;
   background-color: rgba(200, 215, 240, 0.85);
   transition: 0.7s;
 }
 
-#sponsors .ion-chevron-up {
+.ion-chevron-up {
   color: var(--color5);
-  font-size: 5vmax;
+  font-size: 7vmin;
   display: block;
   position: absolute;
   text-align: center;
   bottom: 5vmin;
   margin: auto;
+  font-weight: bold;
   width: 100%;
+  margin-bottom: 1vh;
 }
 
 .sponsorContent {
@@ -156,8 +156,7 @@ img {
   position: relative;
   top: -10vh;
   left: 10vw;
-  width: 40vw;
-  max-width: 40vmin;
+  width: 35vw;
   height: 10vh;
   font-family: Roboto;
   font-size: 6vmin;
@@ -173,22 +172,10 @@ img {
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 1;
   left: 0;
   bottom: 0;
   background-color: rgba(200, 215, 240, 0.85);
   transition: 0.7s;
-}
-
-#schedule .ion-chevron-up {
-  color: var(--color5);
-  font-size: 5vmax;
-  display: block;
-  position: absolute;
-  text-align: center;
-  bottom: 5vmin;
-  margin: auto;
-  width: 100%;
 }
 
 .scheduleContent {
@@ -199,10 +186,12 @@ img {
   color: var(--color5);
   margin: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
   grid-template-columns: 1fr;
   align-items: center;
   overflow-y: hidden;
+  font-family: Roboto, sans-serif;
+  font-size: 5vmin
 }
 .sponsorContent .horizons img {
   width: 70vmin;
@@ -231,10 +220,10 @@ img {
   margin: auto;
   font-weight: bold;
   width: 100%;
+  margin-bottom: 1vh;
   font-family: Roboto, sans-serif;
   font-size: 7vmin;
   font-style: italic;
-  margin-bottom: 1vh;
 }
 
 @media screen and (max-width: 100vh) {
@@ -253,8 +242,12 @@ img {
     margin-right: 3vw;
   }
   #sponButton {
-    width: 80vw;
+    width: 35vw;
     right: 10vw;
+    max-width: none;
+  }
+  #schedButton {
+    width: 35vw;
     left: 10vw;
     max-width: none;
   }
