@@ -100,9 +100,9 @@ img {
 }
 
 #sponButton {
-  position: fixed;
-  bottom: 0;
-  right: 7vw;
+  position: relative;
+  top: -10vh;
+  left: 50vw;
   width: 40vw;
   max-width: 40vmin;
   height: 10vh;
@@ -122,10 +122,9 @@ img {
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 0;
+  bottom: 0;
   background-color: rgba(200, 215, 240, 0.85);
   transition: 0.7s;
-  overflow-y: hidden;
 }
 
 #sponsors .ion-chevron-up {
@@ -150,6 +149,7 @@ img {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   align-items: center;
+  overflow-y: hidden;
 }
 
 .sponsorContent .horizons img {
