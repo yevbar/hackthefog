@@ -1,19 +1,21 @@
 function showSponsors() {
-  document.getElementById("sponsors").style.zIndex = "1";
-  document.getElementById("sponsors").style.height = "100%";
+  $("#sponsors").css('zIndex', '1');
+  $("#sponsors").animate({"height":"100%"}, 700).css('overflow', 'visible');
 }
 
 function hideSponsors() {
-  document.getElementById("sponsors").style.height = "0%";
-  document.getElementById("sponsors").style.zIndex = "0";
+  $("#sponsors").animate({"height":"0%"}, 700, function(){
+    $("#sponsors").css('zIndex', '0');
+  }).css('overflow', 'visible');
 }
 
 function showSchedule() {
-  document.getElementById("schedule").style.height = "100%";
-  document.getElementById("schedule").style.zIndex = "1";
+  $("#schedule").css({"zIndex":"1"});
+  $("#schedule").animate({"height":"100%"}, 700).css('overflow', 'visible');
 }
 
 function hideSchedule() {
-  document.getElementById("schedule").style.height = "0%";
-  document.getElementById("schedule").style.zIndex = "0";
+  $("#schedule").animate({"height":"0%"}, 700, function(){
+    $("#schedule").css({"zIndex":"0"});
+  }).css('overflow', 'visible');
 }
