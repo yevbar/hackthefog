@@ -124,17 +124,13 @@ img {
   background-color: rgba(200, 215, 240, 0.85);
 }
 
-.ion-chevron-up {
+.ion-chevron-down {
   color: var(--color5);
   font-size: 7vmin;
-  display: block;
-  position: absolute;
   text-align: center;
-  bottom: 5vmin;
   margin: auto;
   font-weight: bold;
   width: 100%;
-  margin-bottom: 1vh;
 }
 
 .sponsorContent {
