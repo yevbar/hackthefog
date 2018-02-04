@@ -43,6 +43,15 @@ h2 {
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
 }
+h3 {
+  margin: auto;
+  margin-top: 5vh;
+  width: 75%;
+  font-size: 5.0vmin;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  color: #4c616d;
+}
 
 .logo img {
   width: 70%;
