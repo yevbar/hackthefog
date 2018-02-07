@@ -87,6 +87,7 @@ img {
 
 .sidebar {
   grid-area: apply;
+  width: 90%;
   margin: auto;
   align-self: center;
 }
